@@ -1,0 +1,13 @@
+
+
+{% extends "layout.html" %}
+{% block title %}first app{% endblock %}
+{% block content %}
+{% for Std in Students %}
+{{Std.name}}
+{% comment %} <div>
+    <h2>{{Std.name}}</h2>
+    <img src={{Std.image.url}} alt="">
+</div> {% endcomment %}
+{% endfor %}
+{% endblock %}
